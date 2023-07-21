@@ -2,10 +2,6 @@
 
 This is a web-based Advanced Calculator project that also supports keyboard input.
 
-## Demo
-
--- You might want to add images or a live demo link --
-
 ## Features
 
 -  Standard numerical operations
