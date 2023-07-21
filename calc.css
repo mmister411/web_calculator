@@ -1,0 +1,76 @@
+/* Set the body's background color and font */
+body {
+    background-color: #272822;
+    font-family: Arial, sans-serif;
+}
+
+/* Design of the main calculator container including dimensions, colors, and alignment */
+#calc-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #49483E;
+    color: #F8F8F2;
+    border-radius: 10px;
+    border: 1px solid #75715E;
+}
+
+/* Styling and layout for the calculator's buttons using CSS Grid */
+#calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Styling for each individual calculator button, including color, dimensions, hover effects etc. */
+.calc-button {
+    border: 1px solid #75715E;
+    height: 40px;
+    font-size: 20px;
+    background-color: #75715E;
+    color: #F8F8F2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Smaller scale for calculator button when clicked/active */
+.calc-button:active {
+    transform: scale(0.95);
+}
+
+/* Styling for the calculator's display area, including color, dimensions, aligning text to the right etc. */
+#display {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #75715E;
+    color: #F8F8F2;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Styling for the area displaying the calculation history, including color, dimensions and spacing */
+#calc-history {
+    margin-top: 20px;
+    background: #75715e;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for h2 elements within the calc-history section, including font-size and margin */
+#calc-history h2 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraph elements within the calc-history section, primarily adjusting margin and font-size */
+#calc-history p {
+    margin: 5px 0;
+    font-size: 18px;
+}

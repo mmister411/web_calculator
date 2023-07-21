@@ -1,0 +1,61 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Set the title of the web page to "Advanced Calculator" -->
+    <title>Advanced Calculator</title>
+
+    <!-- Link to the external CSS stylesheet -->
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+<main>
+    <!-- Begin the main calculator container -->
+    <section id="calc-container" role="region" aria-label="Calculator">
+
+        <!-- This is the display section of the calculator -->
+        <input type="text" id="display" readonly>
+
+      <!-- Create an area for calculator buttons -->
+      <div id="calc-buttons">
+          <!-- Calculator buttons with specific functions are defined here -->
+          <button class="calc-button" value="^">^</button>
+          <button class="calc-button" value="^2">sq</button>
+          <button class="calc-button" value="sqrt(">sqrt</button>
+          <button class="calc-button" value="exp(" >exp</button>
+          <button class="calc-button" value="sin(" >sin</button>
+          <button class="calc-button" value="(">(</button>
+          <button class="calc-button" value=")">)</button>
+          <button class="calc-button" value="+">+</button>
+          <button class="calc-button" value="1">1</button>
+          <button class="calc-button" value="2">2</button>
+          <button class="calc-button" value="3">3</button>
+          <button class="calc-button" value="-">-</button>
+          <button class="calc-button" value="4">4</button>
+          <button class="calc-button" value="5">5</button>
+          <button class="calc-button" value="6">6</button>
+          <button class="calc-button" value="/">/</button>
+          <button class="calc-button" value="7">7</button>
+          <button class="calc-button" value="8">8</button>
+          <button class="calc-button" value="9">9</button>
+          <button class="calc-button" value="*">*</button>
+          <button class="calc-button" value="0">0</button>
+          <button class="calc-button" data-value="ac">AC</button>
+          <button class="calc-button" data-value="=">=</button>
+          <button class="calc-button" value=".">.</button>
+      </div>
+
+      <!-- Create an area for the calculator history display -->
+      <div id="calc-history"></div>
+
+    </section>
+    <!-- End the main calculator container -->
+</main>
+
+<!-- Include the external mathjs library to perform calculations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
+<!-- Link the calc.js file which contains the functionality of the calculator -->
+<script src="calc.js"></script>
+</body>
+</html>
